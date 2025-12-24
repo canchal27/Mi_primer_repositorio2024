@@ -1,0 +1,129 @@
+/* estilos generales*/
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #e3f2fd, #fce4ec);
+    color: #333;
+    animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+    from{ opacity: 0;}
+    to{ opacity: 1;}
+}
+h1, h2, h3 {
+    margin: 0;
+    padding-bottom: 10px;
+    font-wight: 700;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #0077cc;
+    transition: 0.3s ease;
+}
+a:hover {
+    color: #005999;
+    text-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+/*encabezado*/
+
+header{
+    background:  #1e1e1e;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+header h1{
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+header nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 15px;
+}
+header nav a{
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+header nav a:hover{
+    background: #00aaff;
+}
+header nav a.active{
+    background: #00aaff;
+}
+
+/* main*/
+
+main{
+    padding: 30px;
+}
+.secciones{
+    background: white;
+    padding:25px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.secciones:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+.secciones ul li{
+    margin-bottom: 8px;
+    padding-left: 10px;
+    border-left: 3px solid #00aaff;
+}
+/*galeria*/
+.imagenes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+.imagenes img{
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, nox-shadow 0.3s ease;
+}
+.imagenes img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+/*redes sociales*/
+
+.secciones ul li a {
+    font-size: 1.1rem;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 8px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.secciones ul li a:hover {
+    background: #e0f7fa;
+    transform: translateX(5px);
+}
+
+/*footer*/
+footer{
+    background-color: #1e1e1e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 0,9rem;
+    letter-spacing: 1px;
+}
