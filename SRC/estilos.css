@@ -28,13 +28,14 @@ header h1 {
     margin-bottom: 15px;
     font-size: 2rem;
     font-weight: 600;
+    
 }
 
 
 header a {
     margin: 0 15px;
     text-decoration: none;
-    color:#93c5fd;
+    color:#214874;
     font-weight: 500;
     transition: 0.3s ease;
 
