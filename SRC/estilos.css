@@ -3,63 +3,49 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Segoe UI", Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
-    background: linear-gradient(135deg, #e8eef5, #f7f9fc);
-    color: #333;
-    line-height: 1.6;
-    animation: fadeIn 0.8s ease-in-out;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #f1f5f9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-
+/*header*/
 
 header {
-    background: #003366;
-    color: white;
-    padding: 25px;
+    background: rgb(178, 178, 39);
+    backdrop-filter: blur(10px);
+    padding: 20px;
     text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    border-bottom: 1px solid rgba(255, 255, 0.1);
 }
 
 header h1 {
     margin-bottom: 15px;
-    font-size: 2.2rem;
-    letter-spacing: 1px;
-    animation: slideDown 0.7s ease;
+    font-size: 2rem;
+    font-weight: 600;
 }
 
-@keyframes slideDown {
-    from { transform: translateY(-20px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
-}
 
 header a {
-    color: white;
-    text-decoration: none;
     margin: 0 15px;
-    font-weight: bold;
-    padding: 8px 12px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
+    text-decoration: none;
+    color:#93c5fd;
+    font-weight: 500;
+    transition: 0.3s ease;
+
 }
 
 header a:hover {
-    background: #ffcc00;
-    color: #003366;
-    transform: scale(1.1);
+    color: #bfdbfe;
+    text-shadow: 0 0 8px #60a5fa;
 }
 
+/*main*/
 
 main {
     width: 90%;
@@ -67,92 +53,60 @@ main {
     margin: 40px auto;
     display: grid;
     gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
-main div {
-    background: white;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    animation: fadeIn 0.8s ease;
+.targeta{
+    text-decoration: none;
+    color: inherit;
 }
 
+.targeta div{
+    background: rgba(255, 255, 255, 0.06);
+    padding:25px;
+    border-radius: 15px;
+    border: 1px solid rgba(155, 255, 255, 0.08);
+    transition: transform(0.3s ease, box-shadow 0.3s ease);
 
-main div:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
 }
 
-main h2 {
-    color: #003366;
-    margin-bottom: 12px;
-    font-size: 1.6rem;
+.tarjeta div:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    border-color: rgba(255, 255, 255, 0.2);
 }
 
-#estilos {
-    border-left: 6px solid #003366;
-    padding-left: 18px;
+.tarjeta h2{
+    margin-bottom: 10px;
+    font-size: 1,4rem;
+    color: #93c5fd;
 }
 
+.contenido p{
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #e2e8f0;
+}
 
-
+/*footer*/
 footer {
-    background: #003366;
-    text-align: center;
+    margin-top: auto;
     padding: 20px;
-    margin-top: 40px;
-    color: white;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 footer a {
-    color: #ffcc00;
+    color: #93c5fd;
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    font-weight: 500;
+    transition: 0.3s ease;
 }
 
 footer a:hover {
-    color: white;
+    color: #bfdbfe;
 }
 
 
 
-@media (max-width: 700px) {
-    header a {
-        display: inline-block;
-        margin: 8px;
-    }
-
-    main {
-        grid-template-columns: 1fr;
-    }
-
-    /* --- Secciones desplegables --- */
-
-.seccion {
-    background: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.seccion:hover {
-    transform: scale(1.02);
-}
-
-/* Contenido oculto */
-.contenido {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease;
-}
-
-/* Cuando se abre */
-.seccion.activa .contenido {
-    max-height: 500px; /* suficiente para mostrar el texto */
-}
-}

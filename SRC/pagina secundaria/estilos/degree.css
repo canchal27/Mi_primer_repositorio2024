@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #f1f5f9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+/* header*/
+
+header{
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+header h1{
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: #93c5fd;
+    font-weight: 600;
+}
+
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #cbd5e1;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+
+nav a:hover{
+    color: #93c5fd;
+    text-shadow: 0 0 8px #60a5fa;
+}
+/*main*/
+
+main{
+    max-width: 900px;
+    margin: 40px auto;
+    padding-bottom: 40px;
+    width: 90%;
+}
+
+.secciones{
+    background: rgba(255, 255, 255, 0.06);
+    padding: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.secciones h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #93c5fd;
+    text-align: center;
+}
+
+
+.secciones h3{
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    color: #bfdbfe;
+}
+
+ul{
+    margin-left: 20px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+ul li{
+    font-size: 1rem;
+    color: #e2e8f0;
+}
+
+ul li a{
+    color: #93c5fd;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+
+ul li a:hover{
+    color: #bfdbfe;
+    text-shadow: 0 0 8px #60a5fa;
+}
+
+
+/*footyer*/
+footer{
+    margin-top: auto;
+    padding:20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+footer p{
+    color: #93c5fd;
+    font-weight: 500;
+}

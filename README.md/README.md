@@ -12,3 +12,16 @@ Guía de Uso
  # Paso 4: 
  Creamos una pagina hatm por cada paso y los vinculamos con sus respectivos estilos
 
+ # paso 5:
+ Terminamos de completar todas las subpaginas.
+
+ # paso 6: 
+ Hacemos un primer diseño de los estilos de las paginas
+
+ # paso 7: 
+ corregimos errores para mejorar y hacer la pagina mas dinámica.
+
+ # paso 8: 
+ Empezamos a mejorar los estilos para que tengan una estructura comun
+ 
+
