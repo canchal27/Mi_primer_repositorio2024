@@ -24,4 +24,8 @@ Guía de Uso
  # paso 8: 
  Empezamos a mejorar los estilos para que tengan una estructura comun
  
+ # paso 9: 
+ corregimos un error de ruta para mostrar las imagenes.
+
+
 
